@@ -3,7 +3,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
 # load data hasil scrape
-with open("D:\\magang\\chatbot\\scraped_bappedalitbang.json", "r", encoding="utf-8") as f:
+with open("scraped_bappedalitbang.json", "r", encoding="utf-8") as f:
     scraped_data = json.load(f)
 
 documents = []

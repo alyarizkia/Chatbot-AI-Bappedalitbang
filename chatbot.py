@@ -14,7 +14,7 @@ def chat_with_bot():
             break
 
         # cari context dari vectorstore
-        docs = vectorstore.similarity_search(user_input, k=3)  
+        docs = vectorstore.similarity_search(user_input, k=7)  
         context = "\n\n".join([d.page_content for d in docs])
 
         # buat prompt dengan context
